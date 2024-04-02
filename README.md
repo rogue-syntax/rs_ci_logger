@@ -42,7 +42,7 @@ require_once BASEPATH.'core/CodeIgniter.php';
 	
 >  an alternative is to rename the exception, shutdown, and error handlers here, 
    and edit the defined a custom error handlers in codeigniter.php line 132 to call them.
-   The main thing is that code igniter must use the exception, shutdown, and error handlers as defined in 			   rs_logging.php so that logging captures everything post exception, shutdown, and error.
+   The main thing is that code igniter must use the exception, shutdown, and error handlers as defined in rs_logging.php so that logging captures everything post exception, shutdown, and error.
 
 
 
@@ -54,9 +54,9 @@ RSLogging->logRequestPre
   -  The registered shutdown and exception handlers append and query errors, process errors, or exceptions thrown to the log data, and send the log data on its merry way
   	- 	Its merry way can include being written to temp file and sent to persistent storage ( do what you will with it ).
   	-  And best of all,
-   - 	It can be processed the rs_activity-tx.php library 
+   - 	It can be processed the rs_activity_TX.php library 
 
-## 2. /application/libraries/rs_activity_tx.php:
+## 2. /application/libraries/rs_activity_TX.php:
 ### Handling the log data
   Included examples here are:
   - Insert to database table ( MySQL example )
