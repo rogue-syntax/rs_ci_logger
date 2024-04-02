@@ -2,7 +2,7 @@
 An end to end request, query, and error logger and request log event processor for Code Igniter V3
 
 
-# 1. /application/hooks/rs_logging.php:
+## 1. /application/hooks/rs_logging.php:
 Intercept incoming requests and log them to a structured logging class 'RSLog'
 
 To implement:
@@ -55,7 +55,8 @@ RSLogging->logRequestPre
   	- 	Its merry way can include being written to temp file and sent to persistent storage ( do what you will with it ).
   	-  And best of all,
    - 	It can be processed the rs_activity-tx.php library 
-  
+
+## 2. /application/libraries/rs_activity_tx.php:
 ### Handling the log data
   Included examples here are:
   - Insert to database table ( MySQL example )
