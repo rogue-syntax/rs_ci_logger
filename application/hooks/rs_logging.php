@@ -217,6 +217,10 @@ class RSLog {
  * @property array $noLogIP The list of IP addresses that are not logged.
  * @property array $noLogPost The list of post data that are not logged.
  * @property CI_Controller $CI The CI instance.
+ * @method void saveToMySqlDB(RSLog $log) example log handler on request shutdown
+ * @method void logRequestPre() called from CI pre request hook, marshales most of the pretinent req data
+ * @method void logRequestPost() called from CI post request hook
+ * @method void onShutdown() called from PHP registered shutdown function
  */
 class RSLogging {
 	/**
