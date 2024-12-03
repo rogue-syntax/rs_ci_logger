@@ -13,13 +13,13 @@ To implement:
   'class'    => 'RSLogging',  
   'function' => 'logRequestPre',
   'filename' => 'rs_logging.php',  
-  'filepath' => 'hooks
+  'filepath' => 'hooks'
   );
   
   $hook['post_controller'][] = array(
   'class'    => 'RSLogging',  
   'function' => 'logRequestPost', 
-  'filename' => 'ps_logging.php',  
+  'filename' => 'rs_logging.php',  
   'filepath' => 'hooks'
   );
   ```
